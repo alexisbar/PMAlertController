@@ -170,7 +170,7 @@ import UIKit
     }
     
     @objc fileprivate func loadNibAlertController() -> [AnyObject]?{
-        let podBundle = Bundle(for: self.classForCoder)
+        let podBundle = Bundle(for: PMAlertController.self)
         
         if let bundleURL = podBundle.url(forResource: "PMAlertController", withExtension: "bundle"){
             
